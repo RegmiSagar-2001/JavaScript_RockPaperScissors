@@ -1,0 +1,19 @@
+{
+  "name": "javascript_rockpaperscissors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RegmiSagar-2001/RockPaperScissors.git"
+  },
+  "author": "Sagar Regmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RegmiSagar-2001/RockPaperScissors/issues"
+  },
+  "homepage": "https://github.com/RegmiSagar-2001/RockPaperScissors#readme"
+}
