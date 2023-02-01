@@ -11,8 +11,8 @@ const conditions = document.querySelectorAll('.rpsButton');
 
 conditions.forEach((condition) => {
   condition.onclick = () => {
-    console.log('clicked');
     userInput = condition.value;
+    console.log('clicked');
     randomComputerCondition();
     compareResult();
   };
@@ -26,15 +26,13 @@ let randomComputerCondition = () => {
   let randomNumber = Math.floor(Math.random() * computerData.length);
   computerInput = computerData[randomNumber];
 };
-
+let innerHTML = (situation) => {
+  return `<h1> ${situation} </h1>
+              <p> ${userInput} vs ${computerInput}</p>`;
+};
 // compare
+let score = null;
 let compareResult = () => {
-  let score = 0;
-  let innerHTML = (situation) => {
-    return `<h1> ${situation} </h1>
-                <p> ${userInput} vs ${computerInput}</p>`;
-  };
-
   if (userInput == computerInput) {
     result.innerHTML = innerHTML('Draw');
     point.innerText = score;
